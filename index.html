@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editify — Spotify-style hub for editors</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB6nMZ8m9e0N0VJ1J/7h7u4Q5D5WBv5g5Jxjz9t5s2T+RZ9x4J2w1zZ7Bph0K5kG9k2RkP+0PvwQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-icon"><i class="fa-solid fa-wave-square"></i></span>
+          <span>Editify</span>
+        </div>
+        <nav class="nav">
+          <a class="nav-item active" href="#">
+            <i class="fa-solid fa-house"></i>
+            Home
+          </a>
+          <a class="nav-item" href="#">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Search
+          </a>
+          <a class="nav-item" href="#">
+            <i class="fa-solid fa-layer-group"></i>
+            Collections
+          </a>
+        </nav>
+        <div class="library">
+          <h4>Your Library</h4>
+          <ul>
+            <li>
+              <i class="fa-regular fa-circle-play"></i>
+              Scene Cuts
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-play"></i>
+              Narration Beds
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-play"></i>
+              Client Approvals
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-play"></i>
+              Motion Packs
+            </li>
+          </ul>
+        </div>
+        <div class="cta">
+          <h4>Create your editor mix</h4>
+          <p>Curate shots, music cues, and b-roll for every project.</p>
+          <button class="primary">New Mix</button>
+        </div>
+      </aside>
+
+      <main class="content">
+        <header class="topbar">
+          <div class="topbar-left">
+            <button class="icon-btn"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="icon-btn"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="Search cuts, assets, cues" />
+            </div>
+          </div>
+          <div class="topbar-right">
+            <button class="ghost">Upgrade</button>
+            <div class="user">
+              <span class="status"></span>
+              <span>Jules Editor</span>
+            </div>
+          </div>
+        </header>
+
+        <section class="hero">
+          <div>
+            <p class="label">EDITOR RADIO</p>
+            <h1>Focus Flow</h1>
+            <p class="sub">
+              A continuous stream of ambient beds, rhythmic hits, and pacing cues to
+              keep your cut on rhythm.
+            </p>
+            <div class="hero-actions">
+              <button class="primary">Play now</button>
+              <button class="secondary">Save to Mix</button>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-top">
+              <span>Now Editing</span>
+              <i class="fa-solid fa-equals"></i>
+            </div>
+            <h3>Documentary Reel</h3>
+            <p>Scene 12 • Color grade pass</p>
+            <div class="progress">
+              <div class="progress-bar"></div>
+            </div>
+            <div class="controls">
+              <button class="icon-btn"><i class="fa-solid fa-backward-step"></i></button>
+              <button class="icon-btn play"><i class="fa-solid fa-play"></i></button>
+              <button class="icon-btn"><i class="fa-solid fa-forward-step"></i></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-title">
+            <h2>Editors’ Picks</h2>
+            <a href="#">Show all</a>
+          </div>
+          <div class="grid">
+            <article class="card">
+              <div class="card-icon"><i class="fa-solid fa-scissors"></i></div>
+              <h3>Cut Rhythm</h3>
+              <p>Beat-driven cues for fast-paced edits and trailers.</p>
+            </article>
+            <article class="card">
+              <div class="card-icon"><i class="fa-solid fa-film"></i></div>
+              <h3>B-Roll Buffer</h3>
+              <p>Fillers and transitions to bridge scenes smoothly.</p>
+            </article>
+            <article class="card">
+              <div class="card-icon"><i class="fa-solid fa-microphone"></i></div>
+              <h3>Voice Warmth</h3>
+              <p>Clean beds for interviews, podcasts, and VO.</p>
+            </article>
+            <article class="card">
+              <div class="card-icon"><i class="fa-solid fa-bolt"></i></div>
+              <h3>Impact Hits</h3>
+              <p>Stingers, risers, and one-shots for emphasis.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-title">
+            <h2>Toolkits</h2>
+            <a href="#">Browse tools</a>
+          </div>
+          <div class="toolkits">
+            <div class="toolkit">
+              <h3>Timeline Stems</h3>
+              <p>Organize timelines by mood, pace, and client notes.</p>
+              <button class="secondary">Open</button>
+            </div>
+            <div class="toolkit">
+              <h3>Sound FX Library</h3>
+              <p>Whooshes, impacts, and Foley packs ready to drop in.</p>
+              <button class="secondary">Open</button>
+            </div>
+            <div class="toolkit">
+              <h3>Revision Tracker</h3>
+              <p>Keep every cut version synced with producers.</p>
+              <button class="secondary">Open</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="player">
+      <div class="player-left">
+        <div class="thumbnail">
+          <i class="fa-solid fa-layer-group"></i>
+        </div>
+        <div>
+          <strong>Client Highlights</strong>
+          <span>Mix: Premiere Pro Sessions</span>
+        </div>
+      </div>
+      <div class="player-center">
+        <div class="controls">
+          <button class="icon-btn"><i class="fa-solid fa-shuffle"></i></button>
+          <button class="icon-btn"><i class="fa-solid fa-backward-step"></i></button>
+          <button class="icon-btn play"><i class="fa-solid fa-play"></i></button>
+          <button class="icon-btn"><i class="fa-solid fa-forward-step"></i></button>
+          <button class="icon-btn"><i class="fa-solid fa-repeat"></i></button>
+        </div>
+        <div class="timeline">
+          <span>1:24</span>
+          <div class="timeline-bar">
+            <div class="timeline-progress"></div>
+          </div>
+          <span>3:41</span>
+        </div>
+      </div>
+      <div class="player-right">
+        <i class="fa-solid fa-volume-high"></i>
+        <div class="volume">
+          <div class="volume-level"></div>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
